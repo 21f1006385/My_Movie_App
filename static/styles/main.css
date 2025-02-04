@@ -26,10 +26,11 @@
 }
 
 .outer_box{
-    border: 1px solid rgb(138,121,4);
+    border: 1px solid rgb(138, 127, 4);
     margin-top: 20px;
     margin: auto;
     padding: 10px;
+    width: 80%;
     border-radius: 10px;
     margin-bottom: 20px;
 
@@ -38,6 +39,6 @@
 .center{
     text-align: center;
     margin: auto;
-    color: rgb(180, 0, 39);
+    color: rgb(180, 36, 0);
     
 }

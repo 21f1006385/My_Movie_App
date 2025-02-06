@@ -16,9 +16,24 @@
                     <label for="user_name" class="form-label">User Name(E-Mail)</label>
                     <input type="email" class="form-control" name="user_name" id="user_name" placeholder="iitm@study.ac.in">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3" style="position: relative;">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" name="password" id="password" placeholder="password">
+                    <!-- Wrap the input and button -->
+                    <div style="position: relative;">
+                        <input 
+                            type="password" 
+                            class="form-control" 
+                            name="password" 
+                            id="password" 
+                            placeholder="password" 
+                            style="padding-right: 40px;">
+                        <button 
+                            type="button" 
+                            id="togglePassword" 
+                            style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); border: none; background: none; cursor: pointer;">
+                            👁️
+                        </button>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="full_name" class="form-label">Full Name</label>
@@ -36,10 +51,13 @@
                 <div class="mb-3">
                     <button type="submit" text-align="center" class="btn btn-primary">Submit</button>
                     Existing User ?<a href ="/login">Login</a>
+                    <div class="center">{{msg}}</div>
                 </div>
             </div>
             </form>
         </div>
-    </div>   
+    </div>
+    <script src="/static/js/script.js"></script>
+
 </body>
 </html>

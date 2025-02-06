@@ -39,6 +39,13 @@
 .center{
     text-align: center;
     margin: auto;
-    color: rgb(180, 36, 0);
+    color: rgb(0, 180, 9);
     
+}
+
+
+.err_msg{
+    text-align: center;
+    margin: auto;
+    color: rgb(239, 255, 9);
 }

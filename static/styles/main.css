@@ -39,7 +39,7 @@
 .center{
     text-align: center;
     margin: auto;
-    color: rgb(0, 180, 9);
+    color: rgb(13, 3, 98);
     
 }
 
@@ -47,5 +47,5 @@
 .err_msg{
     text-align: center;
     margin: auto;
-    color: rgb(239, 255, 9);
+    color: rgb(255, 9, 9);
 }

@@ -34,7 +34,7 @@ class Show(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     name=db.Column(db.String,nullable=False)
     tags=db.Column(db.String,nullable=False)
-    rating=db.Column(db.Integer,default=1)
+    rating=db.Column(db.Integer,default=0)
     tkt_price=db.Column(db.Float,default=0.0)
     date_time=db.Column(db.DateTime,nullable=False)
     theatre_id=db.Column(db.Integer, db.ForeignKey("theatre.id"),nullable=False)

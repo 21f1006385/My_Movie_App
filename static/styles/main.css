@@ -49,3 +49,11 @@
     margin: auto;
     color: rgb(255, 9, 9);
 }
+
+
+.nav_bar{
+    font-size:larger;
+    margin-left: 20px;
+    font-style: italic;
+    font-style: oblique;
+}

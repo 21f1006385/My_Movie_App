@@ -1,0 +1,42 @@
+{%extends "admin_layout.html"%}  <!--Inherited all nav features-->
+{%block content%}
+                <div class="container">
+                    <!-- Display the message if it exists-->
+                    {% if msg %}
+                    <div class="alert alert-warning" role="alert">
+                        {{ msg }}
+                    </div>
+                    {% endif %}
+
+                    {%if theatres%}
+                    <div class="row">
+                      {%for theatre in theatres%}
+                      <div class="col">
+                        <!-- venue 1 card here -->
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title"><a href="/edit_venue/{{theatre.id}}/{{name}}">{{theatre.name}}</a></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">{{theatre.location}}</h6>
+                              {%if theatre.shows%}
+                                <table>
+                                  <tr><th>ID</th><th>Name</th><th>Date/Time</th></tr>
+                                {%for show in theatre.shows%}
+                                  <tr><td><a href="/edit_show/{{show.id}}/{{name}}">{{show.id}}</a></td><td>{{show.name}}</td><td>{{show.date_time}}</td></tr>
+                                {%endfor%}
+                                </table>
+                              {%else%}
+                                <p>No Shows Available</p>
+                              {%endif%}
+                              <a href="/show/{{theatre.id}}/{{name}}" type="button" class="btn btn-outline-primary">+Add Show</a>
+                            </div>
+                        </div>
+                        <!-- End of venue -->
+                      </div>
+                      {%endfor%}
+                    </div>
+                    {%else%}
+                      <h1 class="center">No Venues are available</h1>
+                    {%endif%}
+                </div>
+                <div class="center"><a href="/venue/{{name}}" type="button" class="btn btn-primary">+Add Venue</a></div>
+{%endblock%}       

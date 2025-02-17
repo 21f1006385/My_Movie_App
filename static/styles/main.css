@@ -51,6 +51,14 @@
 }
 
 
+
+.pass_msg{
+    text-align: center;
+    margin: auto;
+    color: rgb(9, 143, 36);
+}
+
+
 .nav_bar{
     font-size:larger;
     margin-left: 20px;

@@ -15,6 +15,7 @@ def setup_app():
     app.app_context().push() # Direct access to other modules
     app.debug=True
     print("My Ticketshow App is started...")
+    
 
 
 

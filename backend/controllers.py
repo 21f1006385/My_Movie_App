@@ -232,6 +232,7 @@ def get_show(id):
 
 def get_theatres_summary():
     theatres=get_theatres()
+    
     summary={}
     for t in theatres:
         summary[t.name]=t.capacity
